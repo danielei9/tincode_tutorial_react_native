@@ -10,8 +10,12 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@react-native-community/picker": "^1.8.1",
     "react": "18.1.0",
-    "react-native": "0.70.2"
+    "react-native": "0.70.2",
+    "react-native-picker-select": "^8.0.4",
+    "react-native-segmented-picker": "^2.0.2",
+    "react-wheelpicker": "^1.0.8"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
