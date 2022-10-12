@@ -5,7 +5,7 @@ import texts from '../utils/text';
 
 export default function Form(props) {
   console.log(props);
-  const {setCapital, setInterest, setMonth} = props;
+  const {setCapital, setInterest, setMonths} = props;
   return (
     <View style={styles.viewForm}>
       <View style={styles.viewInputs}>
@@ -28,10 +28,10 @@ export default function Form(props) {
       </View>
       <TextInput
         placeholder={texts.MONTH}
-        keyboardType="text"
+        keyboardType="numeric"
         style={[pickerSelectStyles.inputAndroid]}
         onChange={e => {
-          setMonth(e.nativeEvent.text);
+          setMonths(e.nativeEvent.text);
         }}
       />
     </View>
