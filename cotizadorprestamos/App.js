@@ -56,17 +56,17 @@ export default function App() {
           setInterest={setInterest}
           setMonths={setMonths}
         />
+
+        <ResultCalculation
+          errorMessage={errorMessage}
+          capital={capital}
+          interest={interest}
+          months={months}
+          total={total}
+        />
+
+        <Footer calculate={calculate} />
       </SafeAreaView>
-
-      <ResultCalculation
-        errorMessage={errorMessage}
-        capital={capital}
-        interest={interest}
-        months={months}
-        total={total}
-      />
-
-      <Footer calculate={calculate} />
     </>
   );
 }
